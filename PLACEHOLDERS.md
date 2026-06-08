@@ -22,11 +22,14 @@ A developer can list every remaining one any time with: `grep -r "{{" .`
 
 ## Where each token currently appears (grouped by file)
 
-- **404.html** — `{{CONTACT_EMAIL}}`
-- **about.html** — `{{BIO_EXPANDED}}`- **articles.html** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}`- **contact.html** — `{{NEWSLETTER_FORM_ACTION_URL}}`- **index.html** — `{{CONTACT_EMAIL}}`- **newsletter.html** — `{{NEWSLETTER_FORM_ACTION_URL}}`- **resources.html** — `{{CONTACT_EMAIL}}`- **webinar.html** — `{{SITE_BASE_URL}}`, `{{YOUTUBE_VIDEO_ID}}`
-- **data/articles.json** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}` *(edit these via `/admin` → Articles)*
+- **about.html** — `{{BIO_EXPANDED}}`
+- **articles.html** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}`
+- **data/articles.json** — same five article tokens *(edit these via `/admin` → Articles instead of by hand)*
+- **contact.html** — `{{NEWSLETTER_FORM_ACTION_URL}}`
+- **newsletter.html** — `{{NEWSLETTER_FORM_ACTION_URL}}`
+- **webinar.html** — `{{YOUTUBE_VIDEO_ID}}`
 
-*(`{{SITE_BASE_URL}}` has already been filled in to the live URL across all files.)*
+*(Already filled in for you: `{{SITE_BASE_URL}}`, `{{LINKEDIN_PROFILE_URL}}`, and `{{CONTACT_EMAIL}}`.)*
 
 ## Separate manual to-dos (not text placeholders)
 1. **Add the 4 guide PDFs** — drop into `guides/` (exact names in `guides/README.md`) or upload via `/admin` → **Guides**. *(These were not pulled from Drive; you'll add them.)*
