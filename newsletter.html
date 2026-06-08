@@ -69,9 +69,10 @@
         </div>
 
         <!-- =========================================================
-             NEWSLETTER SIGNUP — powered by Netlify Forms (works now).
-             Signups are collected in your Netlify dashboard under
-             "Forms" → "newsletter" (export them, or set email alerts).
+             NEWSLETTER SIGNUP — powered by Web3Forms (free, no backend).
+             - You get an email alert for each new subscriber.
+             - The subscriber gets an automatic confirmation (configured
+               in the Web3Forms dashboard "Autoresponder").
 
              WANT A REAL MAILING LIST LATER? (Substack / Mailchimp /
              Buttondown / ConvertKit): delete this whole <form> and paste
@@ -79,15 +80,19 @@
              ========================================================= -->
         <div class="form-card">
           <!-- PROVIDER EMBED START -->
-          <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-            <input type="hidden" name="form-name" value="newsletter" />
-            <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2564b2eb-0306-424d-8789-825b28e2ee12" />
+            <input type="hidden" name="subject" value="New newsletter subscriber" />
+            <input type="hidden" name="from_name" value="Submission-Quality Knowledge Hub" />
+            <input type="hidden" name="redirect" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
+            <!-- Spam trap: -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
             <label for="nl-email">Email address</label>
             <div class="form-row">
               <input type="email" id="nl-email" name="email" placeholder="you@example.com" autocomplete="email" required />
               <button type="submit" class="btn btn--primary">Subscribe</button>
             </div>
-            <p class="form-note">We'll add you to the monthly brief. Unsubscribe anytime.</p>
+            <p class="form-note">You'll get a confirmation email. Unsubscribe anytime.</p>
           </form>
           <!-- PROVIDER EMBED END -->
         </div>

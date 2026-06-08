@@ -68,17 +68,24 @@
         </div>
 
         <!-- =========================================================
-             CONTACT FORM — powered by Netlify Forms (no external service).
-             Submissions appear in your Netlify dashboard under "Forms"
-             (and you can set up email notifications there). The
-             data-netlify="true" attribute is what activates it on deploy.
+             CONTACT FORM — powered by Web3Forms (free, no backend).
+             - You get an email at submissionqualityhub@gmail.com.
+             - The visitor gets an automatic confirmation (set up in the
+               Web3Forms dashboard "Autoresponder").
+             To change where YOUR alert goes, log in at web3forms.com.
+             The access_key below ties this form to your Web3Forms account.
              ========================================================= -->
         <div class="form-card" style="margin-top:1.5rem">
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-            <!-- Required by Netlify Forms: -->
-            <input type="hidden" name="form-name" value="contact" />
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Your Web3Forms account key (safe to be public): -->
+            <input type="hidden" name="access_key" value="2564b2eb-0306-424d-8789-825b28e2ee12" />
+            <!-- Subject of the alert email you receive: -->
+            <input type="hidden" name="subject" value="New contact message from your website" />
+            <input type="hidden" name="from_name" value="Submission-Quality Knowledge Hub" />
+            <!-- After submitting, send the visitor to the thank-you page: -->
+            <input type="hidden" name="redirect" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
             <!-- Spam trap (hidden from people, tempting to bots): -->
-            <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 
             <label for="c-name">Name</label>
             <input type="text" id="c-name" name="name" autocomplete="name" />
@@ -92,7 +99,7 @@
             <div class="form-row" style="margin-top:1rem">
               <button type="submit" class="btn btn--primary">Send message</button>
             </div>
-            <p class="form-note">Your message goes to the author's inbox/dashboard. You can also email directly using the button above.</p>
+            <p class="form-note">You'll get an automatic confirmation by email. You can also reach the author directly using the button above.</p>
           </form>
         </div>
       </div>
