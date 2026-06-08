@@ -183,6 +183,24 @@ p  { margin: 0 0 1rem; }
 /* Card grid on a light section keeps cards white for contrast */
 .section--light .card { background: var(--bg); }
 
+/* Featured "lead" resource card (e.g. the framework). Full content width,
+   visually distinct with a light background + blue left accent, larger heading. */
+.card--featured {
+  background: var(--light);
+  border-left: 5px solid var(--blue);
+  margin-bottom: 1.5rem;
+}
+.card--featured h2 {
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 1.9rem);
+  margin: 0 0 .35rem;
+}
+.card__subtitle { color: var(--navy); font-weight: 600; margin: 0 0 .6rem; }
+/* A light, on light section the featured card stays light-accented */
+.section--light .card--featured { background: var(--bg); border-left-color: var(--navy); }
+
+/* Small heading that separates sections within a page (e.g. "The checklists") */
+.section-subhead { margin: 1.75rem 0 1rem; }
+
 /* ---------- 8. Callout box (left-accent key note) ---------- */
 .callout {
   background: var(--light); border-left: 5px solid var(--navy);
