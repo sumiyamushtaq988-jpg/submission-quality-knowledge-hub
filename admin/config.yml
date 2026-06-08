@@ -1,0 +1,102 @@
+# =====================================================================
+# Decap CMS configuration — the no-code editor at /admin
+# ---------------------------------------------------------------------
+# This tells the browser editor WHAT you can edit and WHERE the files
+# live. You normally won't edit this file. The editor saves changes by
+# committing to your GitHub repo through Netlify's "Git Gateway", which
+# you enable once in the Netlify dashboard (see README, "One-time setup").
+# =====================================================================
+
+backend:
+  name: git-gateway      # uses Netlify Identity + Git Gateway (no tokens to manage)
+  branch: main           # commits land on the main branch -> Netlify redeploys
+
+# Where uploaded FILES (the guide PDFs) are stored by default.
+media_folder: "guides"   # actual folder in the repo
+public_folder: "/guides" # URL path the site uses to link them
+
+# Friendlier commit messages in your GitHub history.
+site_url: "{{SITE_BASE_URL}}"
+display_url: "{{SITE_BASE_URL}}"
+
+collections:
+  # -------------------------------------------------------------------
+  # 1. PAGE TEXT — edit the headline/intro wording on key pages.
+  #    (Saved to data/site.json; the live site picks these up.)
+  # -------------------------------------------------------------------
+  - name: "pages"
+    label: "Page text (headlines & intros)"
+    files:
+      - name: "site"
+        label: "Page headlines & intros"
+        file: "data/site.json"
+        fields:
+          - label: "Home page"
+            name: "home"
+            widget: "object"
+            fields:
+              - { label: "Hero headline", name: "hero_headline", widget: "text" }
+              - { label: "Hero sub-headline", name: "hero_subhead", widget: "text" }
+          - label: "About page"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Guides page"
+            name: "resources"
+            widget: "object"
+            fields:
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Newsletter page"
+            name: "newsletter"
+            widget: "object"
+            fields:
+              - { label: "Intro", name: "intro", widget: "text" }
+
+  # -------------------------------------------------------------------
+  # 2. ARTICLES — add/edit article cards by filling a form.
+  #    (Saved to data/articles.json; rendered on articles.html.)
+  # -------------------------------------------------------------------
+  - name: "articles"
+    label: "Articles"
+    files:
+      - name: "articles_list"
+        label: "Articles list"
+        file: "data/articles.json"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            label_singular: "Article"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date (e.g. Mar 2026)", name: "date", widget: "string", required: false }
+              - { label: "Summary", name: "summary", widget: "text", required: false }
+              - { label: "Link URL", name: "url", widget: "string", required: false, hint: "Full https:// link, e.g. to the LinkedIn post." }
+              - { label: "Link label", name: "linkLabel", widget: "string", required: false, default: "Read on LinkedIn" }
+              # Optional image — uploads go to the /img folder (kept separate
+              # from the guide PDFs above).
+              - { label: "Image (optional)", name: "image", widget: "image", required: false, media_folder: "/img", public_folder: "/img" }
+
+  # -------------------------------------------------------------------
+  # 3. GUIDES — upload/replace the PDFs and edit their titles.
+  #    (Saved to data/guides.json; rendered on resources.html.)
+  # -------------------------------------------------------------------
+  - name: "guides"
+    label: "Guides (PDF downloads)"
+    files:
+      - name: "guides_list"
+        label: "Guides list"
+        file: "data/guides.json"
+        fields:
+          - label: "Guides"
+            name: "guides"
+            label_singular: "Guide"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              # PDF upload — lands in /guides per the media settings above.
+              - { label: "PDF file", name: "file", widget: "file", hint: "Upload or replace the guide PDF here." }

@@ -1,0 +1,15 @@
+{
+  "home": {
+    "hero_headline": "A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays.",
+    "hero_subhead": "Practical, applicant-side guidance — checklists, articles, and a monthly brief — for the RA, CMC, and QA professionals who own submission quality."
+  },
+  "about": {
+    "intro": "Submission-Quality Knowledge Hub is an independent professional-development initiative led by Sumiya Mushtaq, PharmD, MBA, sharing applicant-side submission-quality expertise with the wider regulatory community."
+  },
+  "resources": {
+    "intro": "Free, practical guides and checklists for strengthening ANDA/CTD submissions. Each one targets a recurring, preventable cause of FDA review delay — written from the applicant's side of the desk."
+  },
+  "newsletter": {
+    "intro": "The Submission-Quality Brief is a monthly, roughly five-minute read: notable FDA generic-drug developments plus one practical, applicable tip you can use on your next submission."
+  }
+}

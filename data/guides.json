@@ -1,0 +1,24 @@
+{
+  "guides": [
+    {
+      "title": "Pre-Filing Readiness Checklist — Avoiding a Refuse-to-Receive (RTR) decision on your ANDA",
+      "description": "A practical pre-submission checklist to catch the completeness and formatting gaps that most often trigger a Refuse-to-Receive decision.",
+      "file": "guides/01_Refuse-to-Receive_Pre-Filing_Checklist.pdf"
+    },
+    {
+      "title": "Form FDA 356h: Facility-Readiness Prevention Guide",
+      "description": "Getting establishment and facility information right the first time, so 356h details don't become an avoidable deficiency.",
+      "file": "guides/02_Form356h_Facility-Readiness_Prevention_Guide.pdf"
+    },
+    {
+      "title": "Common Bioequivalence Study-Design Deficiencies — Quick Reference",
+      "description": "A quick reference for spotting and avoiding the first-cycle bioequivalence study-design deficiencies that delay approval.",
+      "file": "guides/03_Bioequivalence_Study-Design_Deficiencies_Quick_Reference.pdf"
+    },
+    {
+      "title": "CTD Module 3 Completeness Self-Audit",
+      "description": "A section-by-section CMC dossier self-check to confirm Module 3 completeness before you submit.",
+      "file": "guides/04_CTD_Module3_Completeness_Self-Audit.pdf"
+    }
+  ]
+}

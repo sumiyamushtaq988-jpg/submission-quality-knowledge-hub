@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>The Submission-Quality Brief — Monthly Newsletter</title>
+  <meta name="description" content="Subscribe to the Submission-Quality Brief: a monthly, ~5-minute read with FDA generic-drug developments and one practical submission-quality tip." />
+  <link rel="canonical" href="{{SITE_BASE_URL}}/newsletter.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Submission-Quality Brief — Monthly Newsletter" />
+  <meta property="og:description" content="A monthly, ~5-minute read: FDA generic-drug developments plus one practical submission-quality tip." />
+  <meta property="og:url" content="{{SITE_BASE_URL}}/newsletter.html" />
+  <meta property="og:image" content="{{SITE_BASE_URL}}/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== SHARED HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Submission-Quality Knowledge Hub — home">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" role="img" aria-hidden="true" focusable="false">
+          <rect width="34" height="34" rx="7" fill="#1F3A5F"></rect>
+          <text x="17" y="23" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">SQ</text>
+        </svg>
+        <span class="brand__text">Submission-Quality<br /><small>Knowledge Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="webinar.html">Webinar</a></li>
+          <li><a href="newsletter.html" aria-current="page">Newsletter</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Monthly newsletter</p>
+        <h1>The Submission-Quality Brief</h1>
+        <p class="lead prose" data-cms="newsletter.intro">A monthly, roughly five-minute read: notable FDA generic-drug developments plus one practical, applicable tip you can use on your next submission.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="prose">
+          <h2 class="mt-0">What you'll get</h2>
+          <ul>
+            <li>Once a month — no inbox flooding.</li>
+            <li>Notable FDA generic-drug and ANDA developments, summarized plainly.</li>
+            <li>One concrete, applicable submission-quality tip each issue.</li>
+          </ul>
+        </div>
+
+        <!-- =========================================================
+             NEWSLETTER SIGNUP
+             SWAP THE PROVIDER: to use Substack, Buttondown, Mailchimp,
+             or ConvertKit, delete the <form> below and paste your
+             provider's embed code between the two PROVIDER EMBED markers.
+
+             OR keep this form and just fill in the action URL: replace
+             {{NEWSLETTER_FORM_ACTION_URL}} with your provider's form
+             POST URL. The button stays disabled until you do, so it
+             never looks broken.
+             ========================================================= -->
+        <div class="form-card">
+          <!-- PROVIDER EMBED START -->
+          <form action="{{NEWSLETTER_FORM_ACTION_URL}}" method="post" data-guarded data-placeholder="true">
+            <label for="nl-email">Email address</label>
+            <div class="form-row">
+              <input type="email" id="nl-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <button type="submit" class="btn btn--primary" disabled>Subscribe</button>
+            </div>
+            <p class="form-note">Signup opens soon — the form goes live as soon as the email provider is connected.</p>
+          </form>
+          <!-- PROVIDER EMBED END -->
+        </div>
+
+        <!-- Newsletter disclaimer line -->
+        <p class="form-note prose" style="margin-top:1.25rem">By subscribing you agree to receive the monthly brief. You can unsubscribe at any time. This is an independent educational newsletter — content is general information, not legal or regulatory advice.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SHARED FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Submission-Quality Knowledge Hub</h4>
+          <p>A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="resources.html">Guides &amp; checklists</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="webinar.html">Webinar</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-nav" style="list-style:none;padding:0;margin:0">
+            <li><a href="{{LINKEDIN_PROFILE_URL}}" data-placeholder="true" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:{{CONTACT_EMAIL}}" data-placeholder="true">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">This site is an independent educational resource by Sumiya Mushtaq, PharmD, MBA. It is not affiliated with, endorsed by, or sponsored by the U.S. FDA or any government agency. Content is general information, not legal or regulatory advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

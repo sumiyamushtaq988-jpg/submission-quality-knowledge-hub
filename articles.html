@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Articles — Submission-Quality Knowledge Hub</title>
+  <meta name="description" content="Short, practical articles on recurring ANDA/CTD submission issues — from CMC Module 3 deficiencies to bioequivalence study design — and how to prevent them." />
+  <link rel="canonical" href="{{SITE_BASE_URL}}/articles.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Articles — Submission-Quality Knowledge Hub" />
+  <meta property="og:description" content="Practical write-ups on recurring ANDA/CTD submission issues and how to prevent them." />
+  <meta property="og:url" content="{{SITE_BASE_URL}}/articles.html" />
+  <meta property="og:image" content="{{SITE_BASE_URL}}/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== SHARED HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Submission-Quality Knowledge Hub — home">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" role="img" aria-hidden="true" focusable="false">
+          <rect width="34" height="34" rx="7" fill="#1F3A5F"></rect>
+          <text x="17" y="23" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">SQ</text>
+        </svg>
+        <span class="brand__text">Submission-Quality<br /><small>Knowledge Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="articles.html" aria-current="page">Articles</a></li>
+          <li><a href="webinar.html">Webinar</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Articles</p>
+        <h1>Practical articles on submission quality</h1>
+        <p class="lead prose">Short, peer-to-peer write-ups on the recurring ANDA/CTD submission issues that drive preventable FDA review delays — and concrete steps to avoid them.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- =========================================================
+             HOW TO ADD A NEW ARTICLE
+             Easiest way: use the CMS at /admin (the "Articles" form).
+             Manual way: copy ONE <article class="card"> ... </article>
+             block below and edit the title, date, summary, and link.
+             (On the live site the cards are generated from
+             data/articles.json; the blocks here are the offline
+             fallback — update both, or just use the CMS.)
+             =========================================================
+        ARTICLE CARD TEMPLATE — copy from here:
+        <article class="card">
+          <p class="card__meta">Month YYYY</p>
+          <h3>Article title goes here</h3>
+          <p>One or two line summary of the article.</p>
+          <a class="btn btn--ghost" href="https://link-to-article" rel="noopener">Read on LinkedIn &rarr;</a>
+        </article>
+        -->
+
+        <div class="grid" data-articles>
+          <!-- Article #1 (real title/link to be filled) -->
+          <article class="card">
+            <p class="card__meta"></p>
+            <h3>{{ARTICLE_1_TITLE}}</h3>
+            <p>Add a one or two line summary of this article here.</p>
+            <a class="btn btn--ghost" href="{{ARTICLE_1_URL}}" data-placeholder="true" rel="noopener">Read on LinkedIn &rarr;</a>
+          </article>
+
+          <!-- Article #2 (real title/link to be filled) -->
+          <article class="card">
+            <p class="card__meta"></p>
+            <h3>{{ARTICLE_2_TITLE}}</h3>
+            <p>Add a one or two line summary of this article here.</p>
+            <a class="btn btn--ghost" href="{{ARTICLE_2_URL}}" data-placeholder="true" rel="noopener">Read on LinkedIn &rarr;</a>
+          </article>
+
+          <!-- Article #3 — title is real and final; only the link is pending -->
+          <article class="card">
+            <p class="card__meta">Upcoming</p>
+            <h3>Five Module 3 / CMC deficiencies that most often delay ANDA approval — and how to prevent them</h3>
+            <p>A practical walkthrough of the recurring CMC dossier gaps that drive first-cycle deficiencies, with prevention steps you can apply before you file.</p>
+            <a class="btn btn--ghost" href="{{ARTICLE_3_URL}}" data-placeholder="true" rel="noopener">Read on LinkedIn &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SHARED FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Submission-Quality Knowledge Hub</h4>
+          <p>A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="resources.html">Guides &amp; checklists</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="webinar.html">Webinar</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-nav" style="list-style:none;padding:0;margin:0">
+            <li><a href="{{LINKEDIN_PROFILE_URL}}" data-placeholder="true" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:{{CONTACT_EMAIL}}" data-placeholder="true">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">This site is an independent educational resource by Sumiya Mushtaq, PharmD, MBA. It is not affiliated with, endorsed by, or sponsored by the U.S. FDA or any government agency. Content is general information, not legal or regulatory advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

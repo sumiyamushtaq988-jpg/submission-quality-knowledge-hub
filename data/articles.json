@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "title": "{{ARTICLE_1_TITLE}}",
+      "date": "",
+      "summary": "Add a one or two line summary of this article here.",
+      "url": "{{ARTICLE_1_URL}}",
+      "linkLabel": "Read on LinkedIn"
+    },
+    {
+      "title": "{{ARTICLE_2_TITLE}}",
+      "date": "",
+      "summary": "Add a one or two line summary of this article here.",
+      "url": "{{ARTICLE_2_URL}}",
+      "linkLabel": "Read on LinkedIn"
+    },
+    {
+      "title": "Five Module 3 / CMC deficiencies that most often delay ANDA approval — and how to prevent them",
+      "date": "Upcoming",
+      "summary": "A practical walkthrough of the recurring CMC dossier gaps that drive first-cycle deficiencies, with prevention steps you can apply before you file.",
+      "url": "{{ARTICLE_3_URL}}",
+      "linkLabel": "Read on LinkedIn"
+    }
+  ]
+}

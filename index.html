@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===== SEO: unique per page ===== -->
+  <title>Submission-Quality Knowledge Hub — Start here</title>
+  <meta name="description" content="An independent knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays." />
+  <link rel="canonical" href="{{SITE_BASE_URL}}/index.html" />
+
+  <!-- ===== Open Graph / social preview ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Submission-Quality Knowledge Hub" />
+  <meta property="og:description" content="Strengthen ANDA/CTD submission quality and reduce preventable FDA review delays — practical, applicant-side guidance." />
+  <meta property="og:url" content="{{SITE_BASE_URL}}/index.html" />
+  <meta property="og:image" content="{{SITE_BASE_URL}}/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ===== Structured data (home page only): who + what site ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Sumiya Mushtaq",
+        "honorificSuffix": "PharmD, MBA",
+        "jobTitle": "Regulatory Affairs Professional",
+        "description": "Regulatory-affairs professional with ~10 years of ICH-CTD / ANDA submission experience (manufacturer / applicant-side).",
+        "url": "{{SITE_BASE_URL}}/about.html",
+        "sameAs": ["{{LINKEDIN_PROFILE_URL}}"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Submission-Quality Knowledge Hub",
+        "url": "{{SITE_BASE_URL}}/",
+        "description": "A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       SHARED HEADER  (identical on every page; if you change a nav
+       link here, change it on every page — or edit via the CMS).
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Submission-Quality Knowledge Hub — home">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" role="img" aria-hidden="true" focusable="false">
+          <rect width="34" height="34" rx="7" fill="#1F3A5F"></rect>
+          <text x="17" y="23" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">SQ</text>
+        </svg>
+        <span class="brand__text">Submission-Quality<br /><small>Knowledge Hub</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="webinar.html">Webinar</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Independent educational resource</p>
+        <h1 data-cms="home.hero_headline">A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays.</h1>
+        <p class="lead" data-cms="home.hero_subhead">Practical, applicant-side guidance — checklists, articles, and a monthly brief — for the RA, CMC, and QA professionals who own submission quality.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="resources.html">Browse the guides</a>
+          <a class="btn btn--ghost" href="newsletter.html">Get the monthly brief</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What you'll find here ===== -->
+    <section class="section">
+      <div class="container">
+        <h2>What you'll find here</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Practical guides &amp; checklists</h3>
+            <p>Section-by-section self-audits and pre-filing checklists that target preventable causes of FDA review delay.</p>
+            <a class="btn btn--ghost" href="resources.html">View guides &rarr;</a>
+          </div>
+          <div class="card">
+            <h3>Articles</h3>
+            <p>Short, practical write-ups on recurring ANDA/CTD submission issues and how to prevent them.</p>
+            <a class="btn btn--ghost" href="articles.html">Read articles &rarr;</a>
+          </div>
+          <div class="card">
+            <h3>Monthly newsletter</h3>
+            <p>The Submission-Quality Brief: a ~5-minute monthly read with FDA generic-drug developments and one practical tip.</p>
+            <a class="btn btn--ghost" href="newsletter.html">Subscribe &rarr;</a>
+          </div>
+          <div class="card">
+            <h3>Webinar &amp; training</h3>
+            <p>Recorded training on the submission-quality discipline that helps prevent first-cycle deficiencies.</p>
+            <a class="btn btn--ghost" href="webinar.html">Watch &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Featured resources strip (4 guides) ===== -->
+    <section class="section section--light">
+      <div class="container">
+        <h2 class="mt-0">Featured guides</h2>
+        <p class="prose">Free downloadable guides built from applicant-side submission experience. Start with whichever maps to your current filing risk.</p>
+
+        <!-- data-guides: main.js fills this from data/guides.json on the live
+             site. The static cards below are the fallback (and what shows when
+             you open the file directly from your computer). -->
+        <div class="grid" data-guides>
+          <article class="card">
+            <h3>Pre-Filing Readiness Checklist</h3>
+            <p>Avoid a Refuse-to-Receive (RTR) decision on your ANDA — catch completeness gaps before you file.</p>
+            <a class="btn btn--primary" href="guides/01_Refuse-to-Receive_Pre-Filing_Checklist.pdf" download>Download PDF &darr;</a>
+          </article>
+          <article class="card">
+            <h3>Form FDA 356h: Facility-Readiness Prevention Guide</h3>
+            <p>Get establishment and facility information right the first time.</p>
+            <a class="btn btn--primary" href="guides/02_Form356h_Facility-Readiness_Prevention_Guide.pdf" download>Download PDF &darr;</a>
+          </article>
+          <article class="card">
+            <h3>Common Bioequivalence Study-Design Deficiencies</h3>
+            <p>A quick reference for avoiding first-cycle BE deficiencies.</p>
+            <a class="btn btn--primary" href="guides/03_Bioequivalence_Study-Design_Deficiencies_Quick_Reference.pdf" download>Download PDF &darr;</a>
+          </article>
+          <article class="card">
+            <h3>CTD Module 3 Completeness Self-Audit</h3>
+            <p>A section-by-section CMC dossier self-check.</p>
+            <a class="btn btn--primary" href="guides/04_CTD_Module3_Completeness_Self-Audit.pdf" download>Download PDF &darr;</a>
+          </article>
+        </div>
+        <p style="margin-top:1.25rem"><a class="btn btn--ghost" href="resources.html">See all guides &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- ===== About teaser ===== -->
+    <section class="section">
+      <div class="container prose">
+        <h2 class="mt-0">About the author</h2>
+        <p>Submission-Quality Knowledge Hub is led by <strong>Sumiya Mushtaq, PharmD, MBA</strong>, a regulatory-affairs professional with roughly ten years of ICH-CTD / ANDA submission experience on the manufacturer (applicant) side. The mission is simple: transfer hard-won submission-quality expertise to the regulatory community so preventable FDA review delays go down.</p>
+        <p><a class="btn btn--ghost" href="about.html">Read the full bio &rarr;</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       SHARED FOOTER  (identical on every page). The disclaimer text
+       is required by law/credibility — keep it word-for-word.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Submission-Quality Knowledge Hub</h4>
+          <p>A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="resources.html">Guides &amp; checklists</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="webinar.html">Webinar</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-nav" style="list-style:none;padding:0;margin:0">
+            <li><a href="{{LINKEDIN_PROFILE_URL}}" data-placeholder="true" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:{{CONTACT_EMAIL}}" data-placeholder="true">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- REQUIRED DISCLAIMER — do not change the wording -->
+      <p class="footer-disclaimer">This site is an independent educational resource by Sumiya Mushtaq, PharmD, MBA. It is not affiliated with, endorsed by, or sponsored by the U.S. FDA or any government agency. Content is general information, not legal or regulatory advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

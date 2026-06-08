@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Contact — Submission-Quality Knowledge Hub</title>
+  <meta name="description" content="Get in touch with Sumiya Mushtaq, PharmD, MBA, of the Submission-Quality Knowledge Hub — by email or LinkedIn." />
+  <link rel="canonical" href="{{SITE_BASE_URL}}/contact.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Submission-Quality Knowledge Hub" />
+  <meta property="og:description" content="Get in touch by email or LinkedIn." />
+  <meta property="og:url" content="{{SITE_BASE_URL}}/contact.html" />
+  <meta property="og:image" content="{{SITE_BASE_URL}}/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== SHARED HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Submission-Quality Knowledge Hub — home">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" role="img" aria-hidden="true" focusable="false">
+          <rect width="34" height="34" rx="7" fill="#1F3A5F"></rect>
+          <text x="17" y="23" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">SQ</text>
+        </svg>
+        <span class="brand__text">Submission-Quality<br /><small>Knowledge Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="webinar.html">Webinar</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Get in touch</h1>
+        <p class="lead prose">Questions, feedback, or speaking and collaboration inquiries are welcome. The quickest way to reach the author is by email or LinkedIn.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="prose">
+          <h2 class="mt-0">Direct contact</h2>
+          <p>
+            <a class="btn btn--primary" href="mailto:{{CONTACT_EMAIL}}" data-placeholder="true">Email the author</a>
+            <a class="btn btn--ghost" href="{{LINKEDIN_PROFILE_URL}}" data-placeholder="true" rel="noopener">Connect on LinkedIn</a>
+          </p>
+        </div>
+
+        <!-- =========================================================
+             OPTIONAL CONTACT FORM
+             Uses the SAME action token as the newsletter form. The
+             button stays disabled until {{NEWSLETTER_FORM_ACTION_URL}}
+             is replaced with a real form-handling URL (e.g. Formspree,
+             Netlify Forms, or your provider).
+             ========================================================= -->
+        <div class="form-card" style="margin-top:1.5rem">
+          <form action="{{NEWSLETTER_FORM_ACTION_URL}}" method="post" data-guarded data-placeholder="true">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" autocomplete="name" />
+
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" name="email" autocomplete="email" required />
+
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required></textarea>
+
+            <div class="form-row" style="margin-top:1rem">
+              <button type="submit" class="btn btn--primary" disabled>Send message</button>
+            </div>
+            <p class="form-note">Messaging opens soon — the form goes live once a form-handling URL is connected. In the meantime, please use the email link above.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SHARED FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Submission-Quality Knowledge Hub</h4>
+          <p>A knowledge hub helping pharmaceutical regulatory professionals strengthen ANDA/CTD submission quality and reduce preventable FDA review delays.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="resources.html">Guides &amp; checklists</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="webinar.html">Webinar</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-nav" style="list-style:none;padding:0;margin:0">
+            <li><a href="{{LINKEDIN_PROFILE_URL}}" data-placeholder="true" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:{{CONTACT_EMAIL}}" data-placeholder="true">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">This site is an independent educational resource by Sumiya Mushtaq, PharmD, MBA. It is not affiliated with, endorsed by, or sponsored by the U.S. FDA or any government agency. Content is general information, not legal or regulatory advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Content editor — Submission-Quality Knowledge Hub</title>
+  <!-- Netlify Identity widget: handles your login to the editor. -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <!-- Decap CMS (formerly Netlify CMS) — the visual editor itself.
+       Loaded from a CDN; nothing to install or build. -->
+  <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
+
+  <script>
+    // After you log in for the first time via an invite email, this sends
+    // you straight into the editor instead of leaving you on a blank page.
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace {{SITE_BASE_URL}} with your final site URL once known.
+Sitemap: {{SITE_BASE_URL}}/sitemap.xml
