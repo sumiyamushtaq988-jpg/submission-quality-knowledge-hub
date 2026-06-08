@@ -12,7 +12,7 @@ A developer can list every remaining one any time with: `grep -r "{{" .`
 |---|---|---|
 | `{{SITE_BASE_URL}}` | ✅ **Already filled in** to `https://submission-quality-knowledge-hub.netlify.app` | Done during deploy — nothing to do. (If you later add a custom domain, update it.) |
 | `{{LINKEDIN_PROFILE_URL}}` | ✅ **Filled in** → `https://www.linkedin.com/in/sumiya-mushtaq` | Done |
-| `{{CONTACT_EMAIL}}` | ✅ **Filled in** → `drsumiyamushtaq28@gmail.com` | Done |
+| `{{CONTACT_EMAIL}}` | ✅ **Filled in** → `submissionqualityhub@gmail.com` | Done |
 | `{{ARTICLE_1_TITLE}}` / `{{ARTICLE_1_URL}}` | Real title + link of your 1st published article | `/admin` → **Articles** |
 | `{{ARTICLE_2_TITLE}}` / `{{ARTICLE_2_URL}}` | Real title + link of your 2nd article | `/admin` → **Articles** |
 | `{{ARTICLE_3_URL}}` | Link for the Module 3/CMC article (title is already written) | `/admin` → **Articles** |
