@@ -3,7 +3,7 @@
     {
       "title": "Pre-Filing Readiness Checklist — Avoiding a Refuse-to-Receive (RTR) decision on your ANDA",
       "description": "A practical pre-submission checklist to catch the completeness and formatting gaps that most often trigger a Refuse-to-Receive decision.",
-      "file": "guides/01_Refuse-to-Receive_Pre-Filing_Checklist.pdf"
+      "file": "/guides/01_refuse-to-receive_pre-filing_checklist.pdf"
     },
     {
       "title": "Form FDA 356h: Facility-Readiness Prevention Guide",
@@ -19,11 +19,6 @@
       "title": "CTD Module 3 Completeness Self-Audit",
       "description": "A section-by-section CMC dossier self-check to confirm Module 3 completeness before you submit.",
       "file": "guides/04_CTD_Module3_Completeness_Self-Audit.pdf"
-    },
-    {
-      "title": "Pre-Filing Readiness Checklist — Avoiding a Refuse-to-Receive (RTR) decision on your ANDA",
-      "description": "A practical pre-submission checklist to catch the completeness and formatting gaps that most often trigger a Refuse-to-Receive decision.",
-      "file": "/guides/01_refuse-to-receive_pre-filing_checklist.pdf"
     }
   ]
 }
