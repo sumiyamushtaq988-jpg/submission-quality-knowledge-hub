@@ -68,24 +68,30 @@
         </div>
 
         <!-- =========================================================
-             CONTACT FORM — powered by Web3Forms (free, no backend).
-             - You get an email at submissionqualityhub@gmail.com.
-             - The visitor gets an automatic confirmation (set up in the
-               Web3Forms dashboard "Autoresponder").
-             To change where YOUR alert goes, log in at web3forms.com.
-             The access_key below ties this form to your Web3Forms account.
+             CONTACT FORM — powered by FormSubmit.co (free, no backend).
+             - YOU get an email at submissionqualityhub@gmail.com (_subject).
+             - The VISITOR gets an automatic confirmation reply
+               (the _autoresponse text below — edit it to change the wording).
+             - After submitting, the visitor lands on the thank-you page (_next).
+             To change the destination address, edit the email in BOTH the
+             form "action" URL and (optionally) keep it consistent.
+             NOTE: the very first time this form is used, FormSubmit emails
+             you a one-time "Activate Form" link — click it once to turn it on.
              ========================================================= -->
         <div class="form-card" style="margin-top:1.5rem">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <!-- Your Web3Forms account key (safe to be public): -->
-            <input type="hidden" name="access_key" value="2564b2eb-0306-424d-8789-825b28e2ee12" />
+          <form action="https://formsubmit.co/submissionqualityhub@gmail.com" method="POST">
             <!-- Subject of the alert email you receive: -->
-            <input type="hidden" name="subject" value="New contact message from your website" />
-            <input type="hidden" name="from_name" value="Submission-Quality Knowledge Hub" />
-            <!-- After submitting, send the visitor to the thank-you page: -->
-            <input type="hidden" name="redirect" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
+            <input type="hidden" name="_subject" value="New contact message from your website" />
+            <!-- Nicely formatted email to you: -->
+            <input type="hidden" name="_template" value="table" />
+            <!-- Automatic confirmation sent to the visitor: -->
+            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to the Submission-Quality Knowledge Hub. Your message has been received and you'll hear back soon. — Sumiya Mushtaq, PharmD, MBA" />
+            <!-- Send the visitor to the thank-you page after submitting: -->
+            <input type="hidden" name="_next" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
+            <!-- Skip the extra captcha page (honeypot below handles spam): -->
+            <input type="hidden" name="_captcha" value="false" />
             <!-- Spam trap (hidden from people, tempting to bots): -->
-            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
             <label for="c-name">Name</label>
             <input type="text" id="c-name" name="name" autocomplete="name" />
