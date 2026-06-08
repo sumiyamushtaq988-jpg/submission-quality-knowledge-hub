@@ -203,5 +203,25 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- ============================================================
+       Netlify Identity helper (for the /admin editor login).
+       Invite & "reset password" emails land on this home page with a
+       token in the address. This script catches that token, lets you
+       set your password, then sends you to the editor at /admin.
+       Safe to leave here; it does nothing for normal visitors.
+       ============================================================ -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
