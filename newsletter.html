@@ -86,7 +86,8 @@
             <!-- Automatic confirmation sent to the new subscriber: -->
             <input type="hidden" name="_autoresponse" value="Thanks for subscribing to The Submission-Quality Brief! Once a month you'll get notable FDA generic-drug developments plus one practical submission-quality tip. You can unsubscribe anytime." />
             <input type="hidden" name="_next" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
-            <input type="hidden" name="_captcha" value="false" />
+            <!-- NOTE: do NOT add _captcha=false here. FormSubmit only sends the
+                 subscriber auto-reply (_autoresponse above) when its captcha is ON. -->
             <!-- Spam trap: -->
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
             <label for="nl-email">Email address</label>

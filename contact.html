@@ -88,8 +88,8 @@
             <input type="hidden" name="_autoresponse" value="Thank you for reaching out to the Submission-Quality Knowledge Hub. Your message has been received and you'll hear back soon. — Sumiya Mushtaq, PharmD, MBA" />
             <!-- Send the visitor to the thank-you page after submitting: -->
             <input type="hidden" name="_next" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
-            <!-- Skip the extra captcha page (honeypot below handles spam): -->
-            <input type="hidden" name="_captcha" value="false" />
+            <!-- NOTE: do NOT add _captcha=false here. FormSubmit only sends the
+                 visitor auto-reply (_autoresponse above) when its captcha is ON. -->
             <!-- Spam trap (hidden from people, tempting to bots): -->
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
