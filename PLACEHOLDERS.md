@@ -10,7 +10,7 @@ A developer can list every remaining one any time with: `grep -r "{{" .`
 
 | Token | What to put | Easiest way to fill |
 |---|---|---|
-| `{{SITE_BASE_URL}}` | Your live URL, e.g. `https://submission-quality-knowledge-hub.netlify.app` | After Netlify deploy; pencil-edit the files, or a dev does one find-replace. Affects SEO/share previews only. |
+| `{{SITE_BASE_URL}}` | ✅ **Already filled in** to `https://submission-quality-knowledge-hub.netlify.app` | Done during deploy — nothing to do. (If you later add a custom domain, update it.) |
 | `{{LINKEDIN_PROFILE_URL}}` | Your LinkedIn profile link | Pencil-edit (appears in footer of every page + About/Contact) |
 | `{{CONTACT_EMAIL}}` | The email you want public | Pencil-edit (footer + Contact + About) |
 | `{{ARTICLE_1_TITLE}}` / `{{ARTICLE_1_URL}}` | Real title + link of your 1st published article | `/admin` → **Articles** |
@@ -23,15 +23,10 @@ A developer can list every remaining one any time with: `grep -r "{{" .`
 ## Where each token currently appears (grouped by file)
 
 - **404.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`
-- **about.html** — `{{BIO_EXPANDED}}`, `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`
-- **articles.html** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}`, `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`
-- **contact.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{NEWSLETTER_FORM_ACTION_URL}}`, `{{SITE_BASE_URL}}`
-- **index.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`
-- **newsletter.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{NEWSLETTER_FORM_ACTION_URL}}`, `{{SITE_BASE_URL}}`
-- **resources.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`
-- **webinar.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`, `{{YOUTUBE_VIDEO_ID}}`
+- **about.html** — `{{BIO_EXPANDED}}`, `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **articles.html** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}`, `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **contact.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{NEWSLETTER_FORM_ACTION_URL}}`- **index.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **newsletter.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{NEWSLETTER_FORM_ACTION_URL}}`- **resources.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **webinar.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`, `{{YOUTUBE_VIDEO_ID}}`
 - **data/articles.json** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}` *(edit these via `/admin` → Articles)*
-- **admin/config.yml**, **sitemap.xml**, **robots.txt** — `{{SITE_BASE_URL}}`
+
+*(`{{SITE_BASE_URL}}` has already been filled in to the live URL across all files.)*
 
 ## Separate manual to-dos (not text placeholders)
 1. **Add the 4 guide PDFs** — drop into `guides/` (exact names in `guides/README.md`) or upload via `/admin` → **Guides**. *(These were not pulled from Drive; you'll add them.)*
