@@ -62,11 +62,14 @@
         <!-- FEATURED: framework lead card — sits ABOVE the four-guide grid.
              Kept OUTSIDE the data-guides container below so the JS-rendered
              grid never overwrites it. -->
-        <article class="card card--featured">
+        <!-- data-framework: main.js fills this from data/framework.json on the
+             live site (edited via the CMS "Framework" section, where you also
+             upload the PDF). The text below is the offline fallback. -->
+        <article class="card card--featured" data-framework>
           <p class="eyebrow">Start here</p>
-          <h2 class="mt-0">The Four-Component Submission-Quality Model</h2>
-          <p class="card__subtitle">A transferable framework for preventing ANDA approval delay at the dossier-preparation stage</p>
-          <p>The methodology behind the four checklists below — how a regulatory team operates so submission-quality deficiencies are caught before filing, every time. The four checklists are the practical execution of this framework.</p>
+          <h2 class="mt-0" data-fw="title">The Four-Component Submission-Quality Model</h2>
+          <p class="card__subtitle" data-fw="subtitle">A transferable framework for preventing ANDA approval delay at the dossier-preparation stage</p>
+          <p data-fw="description">The methodology behind the four checklists below — how a regulatory team operates so submission-quality deficiencies are caught before filing, every time. The four checklists are the practical execution of this framework.</p>
           <a class="btn btn--primary" href="guides/00_Four-Component_Submission-Quality_Framework.pdf" download>Download the framework (PDF)</a>
         </article>
 

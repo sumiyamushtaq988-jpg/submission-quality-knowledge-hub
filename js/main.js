@@ -149,4 +149,23 @@
       });
     }).catch(function () { /* keep static defaults */ });
   }
+
+  // ----- Featured framework card (data/framework.json) -----
+  // Lets the CMS "Framework" section edit the featured card text and upload
+  // the PDF. The static HTML in the card is the offline fallback.
+  var fwEl = document.querySelector("[data-framework]");
+  if (fwEl) {
+    loadJSON("data/framework.json").then(function (d) {
+      if (!d) return;
+      var setText = function (key, val) {
+        var el = fwEl.querySelector('[data-fw="' + key + '"]');
+        if (el && typeof val === "string" && val.trim()) el.textContent = val;
+      };
+      setText("title", d.title);
+      setText("subtitle", d.subtitle);
+      setText("description", d.description);
+      var link = fwEl.querySelector("a.btn");
+      if (link && d.file && !isToken(d.file)) link.setAttribute("href", d.file);
+    }).catch(function () { /* keep static fallback */ });
+  }
 })();

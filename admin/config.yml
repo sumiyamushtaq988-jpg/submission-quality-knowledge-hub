@@ -100,3 +100,20 @@ collections:
               - { label: "Description", name: "description", widget: "text", required: false }
               # PDF upload — lands in /guides per the media settings above.
               - { label: "PDF file", name: "file", widget: "file", hint: "Upload or replace the guide PDF here." }
+
+  # -------------------------------------------------------------------
+  # 4. FRAMEWORK — the featured "Start here" card + its PDF.
+  #    (Saved to data/framework.json; shown at the top of resources.html.)
+  # -------------------------------------------------------------------
+  - name: "framework"
+    label: "Framework (featured)"
+    files:
+      - name: "framework_file"
+        label: "Featured framework"
+        file: "data/framework.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          # PDF upload — lands in /guides like the other PDFs.
+          - { label: "Framework PDF", name: "file", widget: "file", hint: "Upload the framework PDF here." }
