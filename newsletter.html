@@ -69,25 +69,25 @@
         </div>
 
         <!-- =========================================================
-             NEWSLETTER SIGNUP
-             SWAP THE PROVIDER: to use Substack, Buttondown, Mailchimp,
-             or ConvertKit, delete the <form> below and paste your
-             provider's embed code between the two PROVIDER EMBED markers.
+             NEWSLETTER SIGNUP — powered by Netlify Forms (works now).
+             Signups are collected in your Netlify dashboard under
+             "Forms" → "newsletter" (export them, or set email alerts).
 
-             OR keep this form and just fill in the action URL: replace
-             {{NEWSLETTER_FORM_ACTION_URL}} with your provider's form
-             POST URL. The button stays disabled until you do, so it
-             never looks broken.
+             WANT A REAL MAILING LIST LATER? (Substack / Mailchimp /
+             Buttondown / ConvertKit): delete this whole <form> and paste
+             your provider's embed code between the PROVIDER EMBED markers.
              ========================================================= -->
         <div class="form-card">
           <!-- PROVIDER EMBED START -->
-          <form action="{{NEWSLETTER_FORM_ACTION_URL}}" method="post" data-guarded data-placeholder="true">
+          <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
             <label for="nl-email">Email address</label>
             <div class="form-row">
               <input type="email" id="nl-email" name="email" placeholder="you@example.com" autocomplete="email" required />
-              <button type="submit" class="btn btn--primary" disabled>Subscribe</button>
+              <button type="submit" class="btn btn--primary">Subscribe</button>
             </div>
-            <p class="form-note">Signup opens soon — the form goes live as soon as the email provider is connected.</p>
+            <p class="form-note">We'll add you to the monthly brief. Unsubscribe anytime.</p>
           </form>
           <!-- PROVIDER EMBED END -->
         </div>
