@@ -11,8 +11,8 @@ A developer can list every remaining one any time with: `grep -r "{{" .`
 | Token | What to put | Easiest way to fill |
 |---|---|---|
 | `{{SITE_BASE_URL}}` | ✅ **Already filled in** to `https://submission-quality-knowledge-hub.netlify.app` | Done during deploy — nothing to do. (If you later add a custom domain, update it.) |
-| `{{LINKEDIN_PROFILE_URL}}` | Your LinkedIn profile link | Pencil-edit (appears in footer of every page + About/Contact) |
-| `{{CONTACT_EMAIL}}` | The email you want public | Pencil-edit (footer + Contact + About) |
+| `{{LINKEDIN_PROFILE_URL}}` | ✅ **Filled in** → `https://www.linkedin.com/in/sumiya-mushtaq` | Done |
+| `{{CONTACT_EMAIL}}` | ✅ **Filled in** → `drsumiyamushtaq28@gmail.com` | Done |
 | `{{ARTICLE_1_TITLE}}` / `{{ARTICLE_1_URL}}` | Real title + link of your 1st published article | `/admin` → **Articles** |
 | `{{ARTICLE_2_TITLE}}` / `{{ARTICLE_2_URL}}` | Real title + link of your 2nd article | `/admin` → **Articles** |
 | `{{ARTICLE_3_URL}}` | Link for the Module 3/CMC article (title is already written) | `/admin` → **Articles** |
@@ -22,8 +22,8 @@ A developer can list every remaining one any time with: `grep -r "{{" .`
 
 ## Where each token currently appears (grouped by file)
 
-- **404.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`
-- **about.html** — `{{BIO_EXPANDED}}`, `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **articles.html** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}`, `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **contact.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{NEWSLETTER_FORM_ACTION_URL}}`- **index.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **newsletter.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{NEWSLETTER_FORM_ACTION_URL}}`- **resources.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`- **webinar.html** — `{{CONTACT_EMAIL}}`, `{{LINKEDIN_PROFILE_URL}}`, `{{SITE_BASE_URL}}`, `{{YOUTUBE_VIDEO_ID}}`
+- **404.html** — `{{CONTACT_EMAIL}}`
+- **about.html** — `{{BIO_EXPANDED}}`- **articles.html** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}`- **contact.html** — `{{NEWSLETTER_FORM_ACTION_URL}}`- **index.html** — `{{CONTACT_EMAIL}}`- **newsletter.html** — `{{NEWSLETTER_FORM_ACTION_URL}}`- **resources.html** — `{{CONTACT_EMAIL}}`- **webinar.html** — `{{SITE_BASE_URL}}`, `{{YOUTUBE_VIDEO_ID}}`
 - **data/articles.json** — `{{ARTICLE_1_TITLE}}`, `{{ARTICLE_1_URL}}`, `{{ARTICLE_2_TITLE}}`, `{{ARTICLE_2_URL}}`, `{{ARTICLE_3_URL}}` *(edit these via `/admin` → Articles)*
 
 *(`{{SITE_BASE_URL}}` has already been filled in to the live URL across all files.)*
