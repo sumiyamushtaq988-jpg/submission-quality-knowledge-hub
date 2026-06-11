@@ -105,7 +105,7 @@
             "<h3>" + esc(a.title) + "</h3>" +
             "<p>" + esc(a.summary || "") + "</p>" +
             '<a class="btn btn--ghost" href="' + esc(url) + '"' + ph +
-              ' rel="noopener">' + esc(label) + " &rarr;</a>" +
+              ' target="_blank" rel="noopener">' + esc(label) + " &rarr;</a>" +
           "</article>"
         );
       }).join("");
