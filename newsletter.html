@@ -69,30 +69,24 @@
         </div>
 
         <!-- =========================================================
-             NEWSLETTER SIGNUP — powered by Web3Forms (free, no backend).
-             - You get an email alert for each new subscriber.
-             - The subscriber gets an automatic confirmation (configured
-               in the Web3Forms dashboard "Autoresponder").
-
-             WANT A REAL MAILING LIST LATER? (Substack / Mailchimp /
-             Buttondown / ConvertKit): delete this whole <form> and paste
-             your provider's embed code between the PROVIDER EMBED markers.
+             NEWSLETTER SIGNUP — posts directly to Buttondown, the real
+             mailing list (buttondown.com/submissionquality).
+             - Sign-ups land in Buttondown > Subscribers (after they click
+               Buttondown's confirmation email, if double opt-in is on).
+             - Buttondown sends the confirmation, not this site.
+             To change providers later, replace everything between the
+             PROVIDER EMBED markers with the new provider's embed code.
              ========================================================= -->
         <div class="form-card">
           <!-- PROVIDER EMBED START -->
-          <form action="https://formsubmit.co/submissionqualityhub@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New newsletter subscriber" />
-            <input type="hidden" name="_template" value="table" />
-            <!-- Automatic confirmation sent to the new subscriber: -->
-            <input type="hidden" name="_autoresponse" value="Thanks for subscribing to The Submission-Quality Brief! Once a month you'll get notable FDA generic-drug developments plus one practical submission-quality tip. You can unsubscribe anytime." />
-            <input type="hidden" name="_next" value="https://submission-quality-knowledge-hub.netlify.app/thank-you.html" />
-            <!-- NOTE: do NOT add _captcha=false here. FormSubmit only sends the
-                 subscriber auto-reply (_autoresponse above) when its captcha is ON. -->
-            <!-- Spam trap: -->
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <form action="https://buttondown.com/api/emails/embed-subscribe/submissionquality"
+                method="post"
+                class="embeddable-buttondown-form">
+            <input type="hidden" value="1" name="embed" />
             <label for="nl-email">Email address</label>
             <div class="form-row">
-              <input type="email" id="nl-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <input type="email" id="nl-email" name="email" placeholder="you@example.com"
+                     autocomplete="email" required />
               <button type="submit" class="btn btn--primary">Subscribe</button>
             </div>
             <p class="form-note">You'll get a confirmation email. Unsubscribe anytime.</p>
